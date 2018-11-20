@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package GrpcDemo.GRPC;
+
+service Api {
+    rpc Hello (HelloRequest) returns (HelloResponse);
+}
+
+message HelloRequest {
+    bool i = 1;
+}
+
+message HelloResponse {
+    bool i = 1;
+}
